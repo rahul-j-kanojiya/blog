@@ -1,0 +1,61 @@
+<%- include("partials/header.ejs") %>
+
+    <div class="container-fluid my-5">
+
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-7">
+                <div class="card bg-dark border-secondary shadow-lg">
+                    <div class="card-header bg-transparent border-secondary text-white">
+                        <h3 class="mb-0">Create New Post</h3>
+                    </div>
+                    <div class="card-body p-4">
+                        <form action="/submit" method="POST" class="d-flex flex-column gap-3" enctype="multipart/form-data">
+
+                            <!-- Post Title -->
+                            <div>
+                                <label for="postTitle" class="form-label text-light">Post Title</label>
+                                <input type="text" name="title" class="form-control bg-dark border-secondary text-light"
+                                    id="postTitle" placeholder="Enter post title..." required>
+                            </div>
+
+                            <!-- Cover Image -->
+                            <div>
+                                <label for="coverImage" class="form-label text-light">Cover Image</label>
+                                <input class="form-control bg-dark border-secondary text-light" type="file"
+                                    id="coverImage" name="image">
+                            </div>
+
+                            <!-- Description -->
+                            <div>
+                                <label for="postDescription" class="form-label text-light">Description</label>
+                                <textarea name="description" class="form-control bg-dark border-secondary text-light"
+                                    id="postDescription" placeholder="Write a short summary..." rows="3"></textarea>
+                            </div>
+
+                            <!-- Content -->
+                            <div>
+                                <label for="postContent" class="form-label text-light">Content</label>
+                                <textarea name="content" class="form-control bg-dark border-secondary text-light"
+                                    id="postContent" placeholder="Write your post content here..."
+                                    style="height: 300px;" required></textarea>
+                            </div>
+
+                            <!-- Actions -->
+                            <div class="d-flex justify-content-end gap-2 mt-2">
+                                <a href="/" class="btn btn-outline-secondary">Cancel</a>
+                                <button type="submit" class="btn btn-success px-4">Post</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <%- include("partials/footer.ejs") %>
