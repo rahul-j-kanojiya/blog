@@ -12,7 +12,7 @@ A dynamic blog website built with **Node.js**, **Express.js**, and **EJS**. This
 
 ## 🔮 Future Roadmap
 
-We have exciting plans to enhance the platform! Upcoming features include:
+I have exciting plans to enhance the platform! Upcoming features include:
 
 - **Database Integration**: Migrating from local array storage to a real database (MongoDB or PostgreSQL) for persistent data.
 - **CRUD Operations**: Adding ability to **Edit** and **Delete** posts.
